@@ -1,0 +1,33 @@
+<!-- 
+
+<h1 style="text-align: center; color: brown;"><b>VAlidatation</b></h1>
+
+<mat-card style="width: 56rem;">
+    <mat-card-header>
+        <h1>OTP validatation</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" (onsubmit)="validateOtp()"> [formGroup]="validateform"> (onsubmit)="postData()">
+            
+          <mat-form-field class="example-full-width" style="width: 45rem;">
+              <mat-label>OTP</mat-label>
+              <input matInput formControlName="otp" name="otp">
+            </mat-form-field><br><br>
+
+        <div class="d-flex">
+          <button mat-raised-button type="submit" color="primary" (click)="validateOtp()" style="margin-right: 45rem;">Submit</button>
+          <a routerLink="" mat-raised-button color="accent"> login</a>
+        </div>
+          </form>
+    </mat-card-content>
+  </mat-card>
+
+   -->
+
+   <div>
+    <h2>OTP Validation</h2>
+    <label for="otpInput">Enter OTP:</label>
+    <input type="number" id="otpInput" [(ngModel)]="otp" placeholder="Enter OTP">
+    <button (click)="validateOtp()">Submit</button>
+  </div>
+  

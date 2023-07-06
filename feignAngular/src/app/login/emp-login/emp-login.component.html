@@ -1,0 +1,26 @@
+
+<mat-card>
+    <mat-card-header>
+      <h1 style="text-align: center; color: brown;">Employee Login</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="getData()">
+        <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field><br><br>
+  
+        <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>password</mat-label>
+          <input type="password" matInput formControlName="password">
+        </mat-form-field><br><br>
+       
+        if you are admin<a routerLink="/admin">click here</a><br><br>
+        <button mat-raised-button type="submit" color="primary" style="margin-right: 45rem;">Login</button>
+        <a routerLink="/singup" mat-raised-button color="accent">Signup</a>
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+
+  

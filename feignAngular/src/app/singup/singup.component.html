@@ -1,0 +1,106 @@
+
+
+<!-- <h1 style="text-align: center; color: brown;"><b>GOOGLE HOME SURVEYS</b></h1>
+
+<mat-card>
+    <mat-card-header>
+        <h1>Employee Registration Form</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerForm" (onsubmit)="postData()">
+            
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+              <mat-label>User ID</mat-label>
+              <input matInput formControlName="id" name="id">
+            </mat-form-field><br><br>
+
+            <mat-form-field class="example-full-width" style="width: 55rem;">
+            <mat-label>Name</mat-label>
+              <input matInput formControlName="name" name="name">
+            </mat-form-field><br><br>
+           
+            <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>password</mat-label>
+            <input type="password" matInput formControlName="password" name="password">
+          </mat-form-field><br><br>
+
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>Email</mat-label>
+            <input matInput formControlName="email" name="email">
+          </mat-form-field><br><br>
+
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+            <mat-label>role</mat-label>
+              <input matInput formControlName="role" name="role">
+            </mat-form-field><br><br>
+          
+          <div>
+          <mat-radio-group formControlName="gender" aria-label="Gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="d-flex">
+          <button mat-raised-button type="submit" color="primary" (click)="postData()" style="margin-right: 45rem;">Submit</button>
+          <a routerLink="" mat-raised-button color="accent"> login</a>
+        </div>
+          </form>
+    </mat-card-content>
+  </mat-card> -->
+  <div class="abc">
+    <div class="container">
+      <div class="card xyz shadow ">
+       <h3 class="pt-4"> Registration Form</h3>
+       <div class="card-body">
+         <form class="example-form  row  g-0 " [formGroup]="registerForm" (ngSubmit)="postData()">
+           
+             <label for="id" class="form-label">Id</label>
+             <input type="number" formControlName="id" class="form-control mb-4" id="id">
+           
+           
+             <label for="name" class="form-label">Name</label>
+             <input type="text" formControlName="name" class="form-control mb-4" id="name">
+           
+          
+             <label for="email" class="form-label">Email</label>
+             <input type="email" formControlName="email" class="form-control mb-4" id="email">
+           
+           
+             <label for="password" class="form-label">Password</label>
+             <input type="password" formControlName="password" class="form-control mb-4" id="password">
+           
+           
+             <label for="role" class="form-label">Role</label>
+             <!-- <input type="text" formControlName="role" class="form-control mb-4" id="role"> -->
+             <select class="form-select mb-4"  formControlName="role" id="validationCustom04" required>
+               <option selected disabled value="">Choose...</option>
+               <option>employee</option>
+               <option>user</option>
+             </select>
+         
+           <div class=" d-flex">
+             <label for="gender" class="form-label">Gender </label> 
+             <div class="form-check">
+               <label>
+                 <input type="radio" formControlName="gender" value="male" name="gender">
+                 Male
+               </label>
+             </div>
+             <div class="form-check mb-4">
+               <label>
+                 <input type="radio" formControlName="gender" value="female" name="gender">
+                 Female
+               </label>
+             </div>
+           </div>
+           <div>
+             <button type="submit" class="btn btn-primary">Sign in</button>
+           </div>
+         </form>
+       </div>
+      </div>
+    </div>
+   </div>
+ 
+   
+ 

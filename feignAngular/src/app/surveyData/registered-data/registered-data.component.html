@@ -1,0 +1,22 @@
+<div class="tableBack">
+    <table class="table table-bordered text-center">
+        <thead>
+            <th>Survey Number</th>
+            <th>Owner Name</th>
+            <th>Father Name</th>
+            <th>No. Of People</th>
+            <th>No. Of Acres</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.surveyNum}}</td>
+                <td>{{user.ownerName}}</td>
+                <td>{{user.fatherName}}</td>
+                <td>{{user.numOfPeople}}</td>
+                <td>{{user.numOfAcres}}</td>
+                <td><a href="{{user.address}}">{{user.address}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

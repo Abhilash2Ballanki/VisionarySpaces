@@ -1,0 +1,19 @@
+
+
+
+    <table class="img">
+        <thead>
+            <th>homeNum</th>
+            <th>ownerName</th>
+            <th>address</th>
+            <th>rating</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of user">
+               <td>{{user.homeNum}}</td>
+               <td>{{user.ownerName}}</td>
+               <td><a href="{{user.address}}">{{user.address}}</a></td>
+               <td>{{user.rating}}</td>
+            </tr>
+        </tbody>
+    </table>

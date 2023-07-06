@@ -1,0 +1,150 @@
+<div class="col overflow-auto">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+
+      <button
+        class="navbar-toggler ms-auto py-3 bg-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto">
+          <li>
+            <a
+              class="nav-link fw-medium text-white"
+              href="#"
+              routerLink=" "
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a class="nav-link fw-medium text-white" href="#" routerLink="/rent"
+              >Rent</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link fw-medium text-white"
+              href="#"
+              routerLink="/registeredData" style="margin-right: 50rem;"
+            >
+              Registered
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              routerLink="/admin"
+              class="nav-link fw-medium text-white"
+            >
+              <span class="fs-6">Sign up</span>
+            </a>
+          </li>
+
+         
+        </ul>
+      </div>
+
+      <hr class="text-white" />
+    </div>
+  </nav>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-6 col-12">
+      <h1 style="color: black;">Land Survey Number: Guide to Check Your Land Details Online</h1>
+      <img
+        src="https://www.squareyards.com/cdn-cgi/image/quality=70,fit=crop,gravity=auto,format=webp/https://www.squareyards.com/blog/wp-content/uploads/2021/11/land-survey-number-2048x1152.png">
+      <h1 style="color: black;"><b>What is a Land Survey Number?</b></h1>
+      <p style="color: black; font-size: large;">
+        Local governments or revenue officers issue a unique number to each portion of land in their city as a part of
+        their record-keeping for tax purposes. The number serves as the land's identification and is known by the name
+        of the land survey number. The use of land survey numbers is to gain access to property data such as the land
+        shape, area, location, neighbourhood, and ownership rights.
+
+        The data is assimilated by tax officials in each state after a comprehensive investigation of the land site, and
+        then the government provides the land survey number. In Maharashtra, for instance, the land survey number is
+        assigned by the Superintendent of Land Records and the Taluka Inspector of Land Records.</p><br>
+      <h1 style="color: black;"><b>What is the Procedure for Obtaining the Land Survey Number?</b></h1>
+      <p style="color: black; font-size: large;">
+        The number of the land survey is stated on the sale deed. You may discover the land survey number by going to
+        the official website of the state where the property is located. For example, the official website for the state
+        of Andhra Pradesh is meebhoomi.ap.gov.in; for Haryana it is jamabandi.nic.in, and so forth. If this fails to
+        work, you can go to the municipality's office and meet the authorities to get the information you need about the
+        land survey number. Certain governments have created smartphone apps to make land information more accessible.
+        For instance, in the state of Karnataka, the Dishank app may be used to collect land-related data.
+      </p>
+      <h1 style="color: black;"><b>What Method Can be Used for Verifying the Land Survey Number?</b></h1>
+      <p style="color: black; font-size: large;">
+        Cross-checking the land survey number on the sale deed with what's mentioned on the property tax bill is a good
+        way to ensure. If there is a mistake, you must notify the local authorities and get it corrected.
+
+        The revenue departments of the states are responsible for maintaining these websites. On these websites, one may
+        quickly access data on the land survey number by following a simple procedure.
+      </p><br>
+
+    </div>
+
+    <div class="col-lg-6 col-12 ">
+      <p style="color: black; font-size: large;">
+        If you want to acquire a property in India, you ought to know the land survey number to avoid legal
+        complications.
+
+        Due to its cheaper upkeep, better resale value, varied uses, and lower investment cost compared to built
+        structures, the land is considered to be a popular investment option for Indian real estate purchasers.
+
+        However, risk and reward are inextricably linked, and land is no exception. Because of the large numbers of
+        fraudulent operations in this industry, it is crucial to grasp the importance of survey numbers.</p>
+      <ul>
+        <li *ngFor="let survey of user">{{ survey.ownerName }} <button (click)="getData()">submit</button> </li>
+      </ul>
+      <div class="serve p-1 bg-secondary">
+        <h1 style="text-align: center;"><b>Our services</b></h1>
+      </div><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Looking to Buy or Rent Property?</p>
+                <p class="card-text">Exploring Options for Buying or Renting Property</p>
+                <button mat-raised-button type="submit" color="primary" (click)="rent()">try now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="margin-left: 19px;">
+            <div class="card-body">
+              <p class="card-title">For Registration</p>
+              <p class="card-text">Beautiful Places To Live.</p>
+              <button mat-raised-button type="submit" color="primary" (click)="register()">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 19px;">
+        <div class="card-body">
+          <p class="card-title">Homeloans</p>
+          <p class="card-text">Unlock your future with our home loans</p>
+          <button mat-raised-button type="submit" color="primary" (click)="loans()">Homeloans</button>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 19px;">
+        <div class="card-body">
+          <p class="card-title">Home interior</p>
+          <p class="card-text">Design your home to reflect your own style.</p>
+          <button mat-raised-button type="submit" color="primary" (click)="interior()">Home interior</button>
+
+        </div>
+      </div>
+    </div>

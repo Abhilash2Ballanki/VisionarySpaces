@@ -1,0 +1,54 @@
+
+<h1 style="text-align: center; color: brown;"><b>GOOGLE HOME SURVEYS</b></h1>
+
+<mat-card>
+    <mat-card-header>
+        <h1>Home Registration Form</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="homesingUp" (onsubmit)="postData()">
+            
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+              <mat-label>Home Survey Number</mat-label>
+              <input matInput formControlName="surveyNum" name="surveyNum">
+            </mat-form-field><br><br>
+
+            <mat-form-field class="example-full-width" style="width: 55rem;">
+            <mat-label>Owner Name</mat-label>
+              <input matInput formControlName="ownerName" name="ownerName">
+            </mat-form-field><br><br>
+           
+            <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>Father name</mat-label>
+            <input matInput formControlName="fatherName" name="fatherName">
+          </mat-form-field><br><br>
+
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+          <mat-label>Number Of People</mat-label>
+            <input matInput formControlName="numOfPeople" name="numOfPeople">
+          </mat-form-field><br><br>
+
+          <mat-form-field class="example-full-width" style="width: 55rem;">
+            <mat-label>Number of Acres</mat-label>
+              <input matInput formControlName="numOfAcres" name="numOfAcres">
+            </mat-form-field><br><br>
+
+            <mat-form-field class="example-full-width" style="width: 55rem;">
+                <mat-label>Address</mat-label>
+                  <input matInput formControlName="address" name="address">
+                </mat-form-field><br><br>
+
+                <mat-form-field class="example-full-width" style="width: 55rem;">
+                  <mat-label>isactive</mat-label>
+                    <input matInput formControlName="isactive" name="isactive">
+                  </mat-form-field><br><br>
+        
+        <div>
+          <button mat-raised-button type="submit" color="primary" (click)="postData()" style="margin-right: 45rem;">Register</button>
+          <!-- <a routerLink="/registeredData" mat-raised-button color="accent" style="margin-left: 48rem; ">Back to login</a> -->
+        </div>
+          </form>
+    </mat-card-content>
+  </mat-card>
+
+  
