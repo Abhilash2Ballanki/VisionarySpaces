@@ -32,6 +32,9 @@ import { AdminLoginComponent } from './login/admin-login/admin-login.component';
 import { UserdashboardComponent } from './homeDash/userdashboard/userdashboard.component';
 import { EmployeeDashComponent } from './homeDash/employee-dash/employee-dash.component';
 import { AdminDashComponent } from './homeDash/admin-dash/admin-dash.component';
+import { HeaderComponent } from './homedash/userdashboard/header/header.component';
+import { SidenavComponent } from './homedash/userdashboard/sidenav/sidenav.component';
+import { MaindashComponent } from './homedash/userdashboard/maindash/maindash.component';
 
 
 
@@ -54,7 +57,10 @@ import { AdminDashComponent } from './homeDash/admin-dash/admin-dash.component';
     AdminLoginComponent,
     UserdashboardComponent,
     EmployeeDashComponent,
-    AdminDashComponent
+    AdminDashComponent,
+    HeaderComponent,
+    SidenavComponent,
+    MaindashComponent
   ],
   imports: [
     BrowserModule,

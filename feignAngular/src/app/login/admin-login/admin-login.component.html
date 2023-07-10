@@ -72,22 +72,18 @@
     </div>
   </div> 
 </div> -->
-
 <div class="abc">
-  <div class="container mx-5">
-    <div class="row mx-5">
+  <div class="container mx-5 ">
+    <div class="row mx-5 shadow">
       <div class="col-lg-5  d-m-flex image-login d-none d-lg-block">
         <img
           src="https://th.bing.com/th/id/R.f1f311f8646d991b4cf1f777f9284cf6?rik=p2xuDJnbg2EiCA&riu=http%3a%2f%2fwww.financenewspro.com%2fwp-content%2fuploads%2f2018%2f10%2fHome-loan.jpg&ehk=JJ67yJ0bR95R3o%2f9eldkjd1zyh41RMkbzUt%2bzRJqJrc%3d&risl=&pid=ImgRaw&r=0"
-          alt=""
-      width="100%"
-    
-        />
+          alt="" width="100%" />
       </div>
       <div class="col-lg-7   backgr" style="display: flex;
       justify-content: center;align-items: center;">
         <div class="card-body px-5 p-md-5 p-sm-5  ">
-          <form>
+          <form [formGroup]="loginForm" >
             <div class="form-group">
               <h3 class="text-center fw-bold ml-4 pb-4 fs-3">
                 Login To Your Account
@@ -95,41 +91,25 @@
               <div class="form-group pt-2">
                 <div class="input-group mb-2">
                   <span class="input-group-text bi bi-person-fill"></span>
-                  <input
-                    type="text"
-                    class="form-control "
-                    placeholder="Username"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                  />
+                  <input type="text" class="form-control " formControlName="name" placeholder="Username"
+                    aria-label="Username" aria-describedby="basic-addon1" />
                 </div>
               </div>
               <div class="form-group py-2">
                 <div class="input-group mb-2">
                   <span class="input-group-text bi bi-lock-fill"></span>
-                  <input
-                    type="password"
-                    class="form-control  "
-                    placeholder="Password"
-                    aria-label="password"
-                    aria-describedby="basic-addon1"
-                  />
+                  <input type="password" class="form-control" formControlName="password" placeholder="Password"
+                    aria-label="password" aria-describedby="basic-addon1" />
                 </div>
               </div>
 
               <div class="text-center py-2">
-                <button
-                  class="btn btn-block fa-lg gradient-custom-2 btn-primary"
-                  type="button"
-                  routerLink=" "
-                >
+                <button class="btn btn-block fa-lg gradient-custom-2 btn-primary"  type="button" (click)="getData()">
                   Login
                 </button>
               </div>
 
-              <div
-                class="d-flex align-items-center justify-content-center py-2"
-              >
+              <div class="d-flex align-items-center justify-content-center py-2">
                 <p class="mb-0 me-2">Don't have an account?</p>
                 <a routerLink="/singup" class="text-decoration-none">Signup</a>
               </div>

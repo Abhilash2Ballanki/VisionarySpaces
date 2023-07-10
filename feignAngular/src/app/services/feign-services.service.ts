@@ -12,10 +12,10 @@ export class FeignServicesService {
   constructor(private http:HttpClient) { }
 
    postData(empFeign:FeignModel):Observable<FeignModel>{
-    return this.http.post<FeignModel>('http://localhost:8082/insertemp', empFeign);
+    return this.http.post<FeignModel>('http://localhost:8085/signup/insert', empFeign);
   }
 
   logindata(authorize:Authorize):Observable<any>{
-    return this.http.post<Authorize>('http://localhost:8082/login', authorize)
+    return this.http.post<Authorize>('http://localhost:8085/signup/login', authorize)
   }
 }

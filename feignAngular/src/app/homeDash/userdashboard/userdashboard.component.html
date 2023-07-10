@@ -1,11 +1,30 @@
-<div class="sidenav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+<!-- <div class="container">
+  <div class="header"> 
+    <app-header></app-header>
+    </div>
+    <div class="main-container d-flex">
+      
+      <div class="side-nav col-lg-5">
+        <button class="btn btn-light mx-5" (click)=" toggleSidenav()" ><i class="bi bi-list"></i></button>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="main ">
+    <app-maindash></app-maindash>
+    </div>
   </div>
-  <div class="main-content">
-    <!-- Your main content here -->
+</div> -->
+
+
+  <div class="header">
+   <app-header></app-header>
+  </div>
+  <div class="container-fluid d-flex">
+  
+    <div class="side-nav bg-light  ">
+      <app-sidenav></app-sidenav>
+    </div>
+  
+    <div class="main w-100 " >
+        <app-maindash></app-maindash>
+    </div>
   </div>
