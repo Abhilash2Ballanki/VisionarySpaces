@@ -48,7 +48,8 @@ export class AdminLoginComponent {
       };
 
       console.log(empusers);
-
+      console.log("hello Toaster")
+      // this.toastr.warning('invalid username/password')
      
 
       this.authservice.logindata(empusers).subscribe(res => {
@@ -56,17 +57,21 @@ export class AdminLoginComponent {
         // localStorage.setItem("token" , res.token)
         // localStorage.setItem("role",res.role)
         console.log(res.role)
+        
         if(res.role==="user"){
           this.router.navigate(['/user']);
+          this.toastr.success('welcom to user dashboard')
         }
 
 
         // this.toastr.success('employee logged success')
        else if (res.role=="Admin") {
           this.router.navigate(['/admindash'])
+          this.toastr.success('welcom to admin dashboard')
        } else {
-      
+        console.log("hello Toaster")
         this.router.navigate(['/employee']);
+        this.toastr.success('welcome to employee dashboard')
        }
         
 

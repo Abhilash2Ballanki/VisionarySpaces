@@ -1,4 +1,4 @@
-table thead th{
+/* table thead th{
     border: 2px solid black;
     background-color: cadetblue;
 }
@@ -15,4 +15,22 @@ tr td{
     background-size: 80rem;
     object-fit: fill;
 }
+ */
+ 
 
+ .description {
+    overflow: hidden;
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* start showing ellipsis when 3rd line is reached */
+    white-space: pre-wrap;
+    /* color: black;
+    text-decoration: none !important; */
+    }
+    .card:hover{
+        transform: scale(1.02);
+    }
+
+    

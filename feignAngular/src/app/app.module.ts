@@ -32,9 +32,9 @@ import { AdminLoginComponent } from './login/admin-login/admin-login.component';
 import { UserdashboardComponent } from './homeDash/userdashboard/userdashboard.component';
 import { EmployeeDashComponent } from './homeDash/employee-dash/employee-dash.component';
 import { AdminDashComponent } from './homeDash/admin-dash/admin-dash.component';
-import { HeaderComponent } from './homedash/userdashboard/header/header.component';
-import { SidenavComponent } from './homedash/userdashboard/sidenav/sidenav.component';
-import { MaindashComponent } from './homedash/userdashboard/maindash/maindash.component';
+import { HeaderComponent } from './homeDash/userdashboard/header/header.component';
+import { SidenavComponent } from './homeDash/userdashboard/sidenav/sidenav.component';
+import { MaindashComponent } from './homeDash/userdashboard/maindash/maindash.component';
 
 
 
