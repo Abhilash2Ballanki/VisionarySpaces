@@ -1,7 +1,6 @@
 <div class="col overflow-auto">
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container">
-
       <button
         class="navbar-toggler ms-auto py-3 bg-white"
         type="button"
@@ -9,57 +8,45 @@
         data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav m-auto">
           <li>
             <a
               class="nav-link fw-medium text-white"
-              href="#"
-              routerLink=" "
-              >Home</a
-            >
+             
+              routerLink="/" >Home</a>
           </li>
-
           <li>
-            <a class="nav-link fw-medium text-white" href="#" routerLink="/rent"
-              >Rent</a
-            >
+            <a class="nav-link fw-medium text-white"  routerLink="/rent">Rent</a>
           </li>
-
           <li>
             <a
               class="nav-link fw-medium text-white"
               href="#"
-              routerLink="/registeredData" style="margin-right: 50rem;"
-            >
+              routerLink="/registeredData" style="margin-right: 50rem;">
               Registered
             </a>
           </li>
-
           <li>
             <a
               href="#"
               routerLink="/admin"
+
               class="nav-link fw-medium text-white"
             >
               <span class="fs-6">Sign in</span>
+
             </a>
           </li>
-
-         
         </ul>
       </div>
-
       <hr class="text-white" />
     </div>
   </nav>
 </div>
-
 <div class="container mt-4">
   <div class="row">
     <div class="col-lg-6 col-12">
@@ -106,9 +93,7 @@
 
         However, risk and reward are inextricably linked, and land is no exception. Because of the large numbers of
         fraudulent operations in this industry, it is crucial to grasp the importance of survey numbers.</p>
-      <ul>
-        <li *ngFor="let survey of user">{{ survey.ownerName }} <button (click)="getData()">submit</button> </li>
-      </ul>
+      
       <div class="serve p-1 bg-secondary">
         <h1 style="text-align: center;"><b>Our services</b></h1>
       </div><br>
@@ -123,7 +108,8 @@
               </div>
             </div>
           </div>
-          <div class="card" style="margin-left: 19px;">
+          <div class="col-sm-12">
+          <div class="card">
             <div class="card-body">
               <p class="card-title">For Registration</p>
               <p class="card-text">Beautiful Places To Live.</p>
@@ -131,20 +117,23 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card" style="margin-left: 19px;">
-        <div class="card-body">
-          <p class="card-title">Homeloans</p>
-          <p class="card-text">Unlock your future with our home loans</p>
-          <button mat-raised-button type="submit" color="primary" (click)="loans()">Homeloans</button>
+        <div class="col-sm-12">
+          <div class="card" >
+            <div class="card-body">
+              <p class="card-title">Homeloans</p>
+              <p class="card-text">Unlock your future with our home loans</p>
+              <button mat-raised-button type="submit" color="primary" (click)="loans()">Homeloans</button>
+            </div>
         </div>
-      </div>
-      <div class="card" style="margin-left: 19px;">
-        <div class="card-body">
-          <p class="card-title">Home interior</p>
-          <p class="card-text">Design your home to reflect your own style.</p>
-          <button mat-raised-button type="submit" color="primary" (click)="interior()">Home interior</button>
-
+        </div>
+        <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-title">Home interior</p>
+            <p class="card-text">Design your home to reflect your own style.</p>
+            <button mat-raised-button type="submit" color="primary" (click)="interior()">Home interior</button>
+          </div>
+        </div>
         </div>
       </div>
     </div>

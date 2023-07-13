@@ -13,13 +13,13 @@ export class RentComponent {
   user:Rent[]=[];
   constructor(private service:RentserviceService){}
 
-  ngOnInit(){
-    this.getRent();
+  // ngOnInit(){
+  //   this.getRent();
+  // }
+  // getRent(){
+  //   this.service.get().subscribe(res=>{
+  //     console.log(res);
+  //     this.user=res;
+  //   });
   }
-  getRent(){
-    this.service.get().subscribe(res=>{
-      console.log(res);
-      this.user=res;
-    });
-  }
-}
+
