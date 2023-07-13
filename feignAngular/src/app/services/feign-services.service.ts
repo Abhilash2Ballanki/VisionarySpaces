@@ -9,6 +9,8 @@ import { Authorize } from '../model/authorize';
 })
 export class FeignServicesService {
 
+  public username!:string;
+
   constructor(private http:HttpClient) { }
 
    postData(empFeign:FeignModel):Observable<FeignModel>{
@@ -16,6 +18,6 @@ export class FeignServicesService {
   }
 
   logindata(authorize:Authorize):Observable<any>{
-    return this.http.post<Authorize>('http://localhost:8085/signup/login', authorize)
+    return this.http.post<any>('http://localhost:8085/signup/login', authorize)
   }
 }

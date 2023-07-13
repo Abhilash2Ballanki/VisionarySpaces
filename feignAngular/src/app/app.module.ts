@@ -35,6 +35,8 @@ import { AdminDashComponent } from './homeDash/admin-dash/admin-dash.component';
 import { HeaderComponent } from './homedash/userdashboard/header/header.component';
 import { SidenavComponent } from './homedash/userdashboard/sidenav/sidenav.component';
 import { MaindashComponent } from './homedash/userdashboard/maindash/maindash.component';
+import { RentalComponent } from './Rentcomp/rental/rental.component';
+import { BuyorSellComponent } from './Rentcomp/buyor-sell/buyor-sell.component';
 
 
 
@@ -60,7 +62,9 @@ import { MaindashComponent } from './homedash/userdashboard/maindash/maindash.co
     AdminDashComponent,
     HeaderComponent,
     SidenavComponent,
-    MaindashComponent
+    MaindashComponent,
+    RentalComponent,
+    BuyorSellComponent
   ],
   imports: [
     BrowserModule,

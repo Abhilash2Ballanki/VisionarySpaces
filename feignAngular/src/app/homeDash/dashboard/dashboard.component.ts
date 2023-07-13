@@ -41,7 +41,7 @@ export class DashboardComponent {
       this.route.navigate(['rent'])
     }
     register(){
-      this.route.navigate(['login'])
+      this.route.navigate(['admin'])
     }
     loans(){
       this.route.navigate(['loan'])

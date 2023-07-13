@@ -52,25 +52,29 @@ export class AdminLoginComponent {
      
 
       this.authservice.logindata(empusers).subscribe(res => {
-
-        // localStorage.setItem("token" , res.token)
+       console.log(res.token)
+         localStorage.setItem("token" , res.token)
         // localStorage.setItem("role",res.role)
         console.log(res.role)
         if(res.role==="user"){
           this.router.navigate(['/user']);
+          this.toastr.success('welcom to the user dashboard');
         }
 
 
         // this.toastr.success('employee logged success')
        else if (res.role=="Admin") {
           this.router.navigate(['/admindash'])
-       } else {
+          this.toastr.success('welcom to the admin dashboard');
+       } else  if(res.role=="employee"){
       
         this.router.navigate(['/employee']);
+        this.toastr.success('welcom to the employee dashboard');
        }
+      
         
 
       });
-
+      this.authservice.username=empusers.name;
   }
 }

@@ -18,6 +18,9 @@ import { AdminLoginComponent } from './login/admin-login/admin-login.component';
 import { UserdashboardComponent } from './homeDash/userdashboard/userdashboard.component';
 import { EmployeeDashComponent } from './homeDash/employee-dash/employee-dash.component';
 import { AdminDashComponent } from './homeDash/admin-dash/admin-dash.component';
+import { RentalComponent } from './Rentcomp/rental/rental.component';
+import { buffer } from 'rxjs';
+import { BuyorSellComponent } from './Rentcomp/buyor-sell/buyor-sell.component';
 
 const routes: Routes = [
   {path:'singup', component:SingupComponent},
@@ -36,7 +39,9 @@ const routes: Routes = [
   {path:'admin',component:AdminLoginComponent},
   {path:'user',component:UserdashboardComponent},
   {path:'employee',component:EmployeeDashComponent},
-  {path:'admindash',component:AdminDashComponent}
+  {path:'admindash',component:AdminDashComponent},
+  {path:'rental',component:RentalComponent},
+  {path:'buyorsell',component:BuyorSellComponent}
 ];
 
 @NgModule({

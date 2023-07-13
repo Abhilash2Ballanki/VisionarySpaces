@@ -13,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class SingupComponent {
   emp: FeignModel[] = [];
-  employee: FeignModel = new FeignModel(0, '', '', '', '', '', false);
+  employee: FeignModel = new FeignModel('','', '','','','','', '', '', '', false);
 
   registerForm !: FormGroup;
 
@@ -57,10 +57,17 @@ export class SingupComponent {
       if(this.employee.role==="employee"){
       this.router.navigate(['/employee']);
       }
-      else{
-        this.router.navigate(['/user']);
+      else if(this.employee.role==="Admin"){
+        this.router.navigate(['/admindash']);
       }
-
+      else if(this.employee.role==="user"){
+        this.router.navigate(['/user'])
+      }
+       else{
+        // this.router.navigate(['/dashboard'])
+        this.tostr.warning("invaild username/password")
+        
+       }
     })
   }
 }

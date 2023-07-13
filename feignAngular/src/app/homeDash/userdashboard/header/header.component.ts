@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FeignServicesService } from 'src/app/services/feign-services.service';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
  
+  constructor(public autheservice:FeignServicesService){
+
+  }
 
 }
